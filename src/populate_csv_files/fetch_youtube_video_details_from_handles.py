@@ -397,7 +397,7 @@ def run():
     # TODO 2023-09-11: add functionality to only load the difference between the existing data and the new data, expectedly being able to see only videos from a given timestamp and on
     # TODO 2023-09-11: add functionality to fetch all videos which are unlisted
     # TODO 2023-09-25: rotate on API keys to avoid hitting the quota limit
-    fetch_videos = True
+    fetch_videos = False
     if not fetch_videos:
         logging.info(f"Applying new filters only, not fetching videos.")
 
@@ -431,6 +431,18 @@ def run():
 
     # Call the filter_and_log_removed_videos method to filter and log removed videos
     filter_and_remove_videos(input_csv_path, keywords, channel_specific_filters)
+
+    # Specify the input CSV file path
+    input_csv_path = f"{root_directory()}/data/links/youtube/youtube_videos.csv"
+
+    # Load CSV into a pandas DataFrame
+    df = pd.read_csv(input_csv_path, delimiter=',')
+
+    # Drop duplicates
+    df.drop_duplicates(inplace=True)
+
+    # Optionally, save the cleaned data back to the CSV
+    df.to_csv(input_csv_path, index=False)
 
 
 if __name__ == '__main__':

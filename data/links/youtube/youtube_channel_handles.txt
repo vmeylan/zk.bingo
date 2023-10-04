@@ -1,1 +1,1 @@
-@howardjeremyp,@Weaviate,@jamesbriggs,@thinknimble,@LlamaIndex,@SebastienBubeck,@AlignmentWorkshop
+@howardjeremyp,@Weaviate,@jamesbriggs,@thinknimble,@LlamaIndex,@SebastienBubeck,@AlignmentWorkshop,@anyscale
