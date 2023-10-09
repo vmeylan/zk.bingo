@@ -1,3 +1,3 @@
-### (1) View: [data.llm.gallery](https://data.llm.gallery), (2) Contribute: [add.llm.gallery](https://add.llm.gallery), (3) site: [llm.gallery](https://llm.gallery)
+### (1) View: [data.zk.bingo](https://data.zk.bingo), (2) Contribute: [add.zk.bingo](https://add.zk.bingo), (3) site: [zk.bingo](https://zk.bingo)
 
-# llm.gallery is the LLM research content aggregator and search engine
+# zk.bingo is the zk-proof research content aggregator and search engine

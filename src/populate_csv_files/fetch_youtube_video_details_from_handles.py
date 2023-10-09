@@ -22,7 +22,7 @@ from src.utils import root_directory, authenticate_service_account, get_videos_f
 load_dotenv()
 
 # Note, the use of keywords List is an attempt at filtering YouTube videos by name content to reduce noise
-keywords = []
+keywords = ['zk', 'zero knowledge']
 keywords_to_exclude = []
 
 
